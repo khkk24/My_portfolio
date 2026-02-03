@@ -12,21 +12,24 @@ import { useProjects } from '@presentation/hooks/useProjects';
 import '@infrastructure/i18n/config';
 
 export default function Home() {
-  const { data: profile } = useProfile();
+  const { data: profile, isLoading: profileLoading } = useProfile();
   const { data: experiences = [] } = useTimeline();
   const { data: projects = [] } = useProjects();
 
   const stats = {
-    projectsCount: projects.length,
+    projectsCount: projects.length || 0,
     yearsExperience: 5,
     publications: 8,
     institutions: ['UFPR', 'UTFPR'],
   };
 
-  if (!profile) {
+  if (profileLoading || !profile) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-xl">Carregando...</div>
+      <div className="min-h-screen flex items-center justify-center bg-secondary">
+        <div className="text-center">
+          <div className="text-2xl font-bold text-primary mb-4">Carregando...</div>
+          <div className="text-sm text-accent">Inicializando portfólio</div>
+        </div>
       </div>
     );
   }
