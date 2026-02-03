@@ -1,37 +1,43 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MainLayout } from '@presentation/components/templates/MainLayout';
 import { HeroBanner } from '@presentation/components/organisms/HeroBanner';
 import { StatsBanner } from '@presentation/components/organisms/StatsBanner';
 import { AboutSection } from '@presentation/components/organisms/AboutSection';
 import { Timeline } from '@presentation/components/organisms/Timeline';
-import { useProfile } from '@presentation/hooks/useProfile';
-import { useTimeline } from '@presentation/hooks/useTimeline';
-import { useProjects } from '@presentation/hooks/useProjects';
+import { MockProfileRepository } from '@infrastructure/repositories/MockProfileRepository';
+import { MockExperienceRepository } from '@infrastructure/repositories/MockExperienceRepository';
+import { Profile } from '@domain/entities/Profile';
+import { Experience } from '@domain/entities/Experience';
 import '@infrastructure/i18n/config';
 
+const profileRepo = new MockProfileRepository();
+const experienceRepo = new MockExperienceRepository();
+
 export default function Home() {
-  const { data: profile, isLoading: profileLoading } = useProfile();
-  const { data: experiences = [] } = useTimeline();
-  const { data: projects = [] } = useProjects();
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [experiences, setExperiences] = useState<Experience[]>([]);
+
+  useEffect(() => {
+    Promise.all([
+      profileRepo.get(),
+      experienceRepo.getAll()
+    ]).then(([profileData, experiencesData]) => {
+      setProfile(profileData);
+      setExperiences(experiencesData);
+    });
+  }, []);
 
   const stats = {
-    projectsCount: projects.length || 0,
+    projectsCount: 15,
     yearsExperience: 5,
     publications: 8,
     institutions: ['UFPR', 'UTFPR'],
   };
 
-  if (profileLoading || !profile) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-secondary">
-        <div className="text-center">
-          <div className="text-2xl font-bold text-primary mb-4">Carregando...</div>
-          <div className="text-sm text-accent">Inicializando portfólio</div>
-        </div>
-      </div>
-    );
+  if (!profile) {
+    return null;
   }
 
   return (
