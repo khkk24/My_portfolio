@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "professional": "Profissional",
+    "academic": "Acadêmico",
+    "personal": "Pessoal"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "viewProjects": "Ver Projetos",
+    "contactMe": "Entre em Contato"
+  },
+  "stats": {
+    "projects": "Projetos",
+    "experience": "Anos de Experiência",
+    "publications": "Publicações",
+    "institutions": "Instituições"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "subtitle": "Cientista da Computação & Especialista em IA",
+    "bio": "Cientista da computação com sólida formação acadêmica e experiência profissional em Inteligência Artificial e Ciência de Dados. Atualmente mestrando com foco em Visão Computacional, com histórico comprovado no desenvolvimento de soluções de IA para empresas. Combinando rigor acadêmico com aplicação prática, busco contribuir para o avanço da tecnologia através de pesquisa inovadora e desenvolvimento de sistemas inteligentes."
+  },
+  "timeline": {
+    "title": "Trajetória Profissional",
+    "current": "Atual",
+    "present": "Presente"
+  },
+  "academic": {
+    "title": "Formação Acadêmica",
+    "subtitle": "Diplomas, Certificações e Conquistas",
+    "degree": "Graduação/Mestrado",
+    "diploma": "Diploma",
+    "certification": "Certificação",
+    "award": "Prêmio"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Repositórios Públicos do GitHub",
+    "stars": "Estrelas",
+    "forks": "Forks",
+    "updated": "Atualizado",
+    "viewOnGithub": "Ver no GitHub",
+    "loading": "Carregando projetos...",
+    "error": "Erro ao carregar projetos",
+    "loadMore": "Carregar Mais",
+    "remaining": "restantes"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "madeWith": "Feito com",
+    "and": "e"
+  }
+}

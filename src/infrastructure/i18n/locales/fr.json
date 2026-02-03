@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "professional": "Professionnel",
+    "academic": "Académique",
+    "personal": "Personnel"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "viewProjects": "Voir les Projets",
+    "contactMe": "Me Contacter"
+  },
+  "stats": {
+    "projects": "Projets",
+    "experience": "Ans d'Expérience",
+    "publications": "Publications",
+    "institutions": "Institutions"
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Informaticien & Spécialiste en IA",
+    "bio": "Informaticien avec une solide formation académique et une expérience professionnelle en Intelligence Artificielle et Science des Données. Actuellement étudiant en master axé sur la Vision par Ordinateur, avec un historique prouvé dans le développement de solutions d'IA pour les entreprises. Alliant rigueur académique et application pratique, je cherche à contribuer à l'avancement de la technologie à travers la recherche innovante et le développement de systèmes intelligents."
+  },
+  "timeline": {
+    "title": "Parcours Professionnel",
+    "current": "Actuel",
+    "present": "Présent"
+  },
+  "academic": {
+    "title": "Formation Académique",
+    "subtitle": "Diplômes, Certifications et Réalisations",
+    "degree": "Diplôme Universitaire",
+    "diploma": "Diplôme",
+    "certification": "Certification",
+    "award": "Prix"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Dépôts Publics GitHub",
+    "stars": "Étoiles",
+    "forks": "Forks",
+    "updated": "Mis à jour",
+    "viewOnGithub": "Voir sur GitHub",
+    "loading": "Chargement des projets...",
+    "error": "Erreur lors du chargement",
+    "loadMore": "Charger Plus",
+    "remaining": "restants"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "madeWith": "Fait avec",
+    "and": "et"
+  }
+}

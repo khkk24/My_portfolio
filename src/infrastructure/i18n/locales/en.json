@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "professional": "Professional",
+    "academic": "Academic",
+    "personal": "Personal"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "stats": {
+    "projects": "Projects",
+    "experience": "Years of Experience",
+    "publications": "Publications",
+    "institutions": "Institutions"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Computer Scientist & AI Specialist",
+    "bio": "Computer scientist with solid academic background and professional experience in Artificial Intelligence and Data Science. Currently a master's student focused on Computer Vision, with a proven track record in developing AI solutions for companies. Combining academic rigor with practical application, I seek to contribute to the advancement of technology through innovative research and development of intelligent systems."
+  },
+  "timeline": {
+    "title": "Professional Journey",
+    "current": "Current",
+    "present": "Present"
+  },
+  "academic": {
+    "title": "Academic Background",
+    "subtitle": "Degrees, Certifications and Achievements",
+    "degree": "University Degree",
+    "diploma": "Diploma",
+    "certification": "Certification",
+    "award": "Award"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Public GitHub Repositories",
+    "stars": "Stars",
+    "forks": "Forks",
+    "updated": "Updated",
+    "viewOnGithub": "View on GitHub",
+    "loading": "Loading projects...",
+    "error": "Error loading projects",
+    "loadMore": "Load More",
+    "remaining": "remaining"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "and": "and"
+  }
+}
