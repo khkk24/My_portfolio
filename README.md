@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Profissional
 
 Site portfólio profissional construído com Next.js, TypeScript e arquitetura DDD + Atomic Design.
@@ -190,3 +191,7 @@ MIT
 ## 👤 Autor
 
 Seu Nome - [GitHub](https://github.com/khkk24)
+=======
+# My_portfolio
+Meu link Profissional
+>>>>>>> 3797b79fe54d35cb472b38e4332b88a21dd91349
